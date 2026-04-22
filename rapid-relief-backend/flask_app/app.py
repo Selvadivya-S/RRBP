@@ -34,7 +34,7 @@ hospital_admins.create_index("email", unique=True)
 
 # -------------------- Email Configuration --------------------
 # Option 1: SendGrid (if configured)
-SENDGRID_API_KEY = os.getenv("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", "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")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 SENDGRID_VERIFIED_SENDER = os.getenv("selvadivya870@gmail.com", "selvadivya870@gmail.com")
 
 # Option 2: SMTP (Gmail, Outlook, etc.) - Easier to set up
