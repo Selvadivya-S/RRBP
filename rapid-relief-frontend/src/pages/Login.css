@@ -1,0 +1,169 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+.login-container {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(120, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("https://images.unsplash.com/photo-1615461066841-6116e61058f4")
+      no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: absolute;
+  left: 60px;
+  max-width: 420px;
+  color: white;
+}
+
+.hero-section h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stats h3 {
+  color: #ff4d4d;
+}
+
+.login-card {
+  width: 430px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.4);
+  animation: fadeUp 0.8s ease;
+  z-index: 2;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 6px;
+  transition: 0.3s;
+  color: gray;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #b00020;
+}
+
+.password-group .toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.role-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.options a {
+  color: #b00020;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #b00020;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8a0018;
+}
+
+.error-msg {
+  background: #ffd6d6;
+  color: #900;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.heartbeat {
+  width: 60px;
+  height: 4px;
+  background: red;
+  margin: auto;
+  margin-bottom: 15px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  0% { width: 30px; }
+  50% { width: 80px; }
+  100% { width: 30px; }
+}

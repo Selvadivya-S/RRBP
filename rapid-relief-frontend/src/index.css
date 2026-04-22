@@ -1,0 +1,156 @@
+/* =========================
+   Global Styles
+========================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7757d, #ffb199, #ff8a8a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   Glassmorphism Card
+========================= */
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Card Title */
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   Form Styles
+========================= */
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group select {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   Icons inside Inputs
+========================= */
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff6a6a, #ff3b3b);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff3b3b, #ff6a6a);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Links
+========================= */
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+p a {
+  color: #ffd700;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Checkbox Styles
+========================= */
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Animations
+========================= */
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

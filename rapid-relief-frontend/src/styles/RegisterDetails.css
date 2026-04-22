@@ -1,0 +1,56 @@
+.register-bg {
+  min-height: 100vh;
+  background: linear-gradient(rgba(180,0,0,0.85), rgba(120,0,0,0.85)),
+    url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  width: 380px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.register-card p {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.register-card input,
+.register-card select,
+.register-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  background: #ff1a1a;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.register-card button:hover {
+  background: #cc0000;
+}

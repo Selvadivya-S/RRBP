@@ -1,0 +1,11 @@
+POST http://127.0.0.1:5000/add_user
+Content-Type: application/json
+
+{
+  "name": "Selvadivya",
+  "email": "test@example.com"
+}
+
+---
+
+GET http://127.0.0.1:5000/get_users
